@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #414141;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav{
+    background-color: #212121;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+}
+
+
+
+
+.container{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.calculator{
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+
+    background-color: #212121;
+    /* margin-top: 2rem; */
+
+    box-shadow: 20px 20px 55px rgba(0, 0, 0, 0.75),
+                10px 10px 50px rgba(0, 0, 0, 0.25),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#input_data{
+    grid-column: span 4;
+    height: 70px;
+    width: 290px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 50px;
+    text-align: end;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #414141;
+
+    box-shadow: inset -5px -5px 12px white,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+
+}
+
+
+.calculator .btn{
+
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+    border-radius: 50px;
+
+    border: none;
+    outline: none;
+
+    box-shadow: 2px 2px 5px #ffff,
+                inset 5px 5px 12px rgba(0, 0, 0, 0.25);
+
+    font-size: 1rem;
+}
+.btn:hover{
+    /* background: linear-gradient(to right, rgba(1, 132, 255, 0.534), rgb(217, 146, 250)); */
+    background-color: #414141;
+    color: white;
+}
+
+
+#Calculate{
+    width: 120px;
+
+    border-radius: 40px;
+    /* box-shadow: inset -5px -5px 12px white,
+                inset  5px 5px 12px rgba(0, 0, 0, 0.16); */
+
+    box-shadow: 2px 2px 5px #ffff,
+                inset 5px 5px 12px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+}
+
